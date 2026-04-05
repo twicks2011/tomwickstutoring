@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Approach - Maths Tutor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <div id="menu-backdrop"></div>
+
+    <header class="bg-green-600 text-white sticky top-0 z-50 border-b">
+      <div
+        class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <a href="index.html" class="text-xl font-bold">Tom Wicks Tutoring</a>
+        <nav class="hidden md:block">
+          <ul class="flex gap-2 items-center">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="nav-link" href="background.html"
+                >Experience & Qualifications</a
+              >
+            </li>
+            <li><a class="nav-link" href="approach.html">Approach</a></li>
+            <li>
+              <a class="nav-link" href="pricing.html">Availability & Pricing</a>
+            </li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          id="menu-btn"
+          aria-label="Open menu"
+          class="md:hidden p-2 rounded-md border border-white"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden
+          >
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden p-6">
+        <nav>
+          <ul class="space-y-3">
+            <li><a class="block nav-link" href="index.html">Home</a></li>
+            <li>
+              <a class="block nav-link" href="background.html"
+                >Experience & Qualifications</a
+              >
+            </li>
+            <li><a class="block nav-link" href="approach.html">Approach</a></li>
+            <li>
+              <a class="block nav-link" href="pricing.html"
+                >Availability & Pricing</a
+              >
+            </li>
+            <li><a class="block nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 flex-1">
+      <section class="max-w-4xl mx-auto py-12 px-6">
+        <h2 class="text-4xl font-bold mb-4">Tutoring Approach</h2>
+        <p class="text-lg leading-relaxed">
+          I take a patient and empathetic approach. I listen to my students and
+          tailor my approach to suit their needs. I aim to build confidence,
+          reducing uncertainty and anxiety to ensure that learning is secure and
+          a solid foundation of knowledge and skills is built. In the
+          short-term, this makes students feel more comfortable studying
+          mathematics, and in the long-term prepares them well for exams and
+          future study.
+        </p>
+        <p>&nbsp;</p>
+        <p class="text-lg leading-relaxed">
+          I regularly set homework to be completed between sessions. This gives
+          students the opportunity to check whether they fully understood the
+          content of the latest session and practise key techniques. It also
+          let's me know whether we can move on or need to revise a particular
+          topic to fill a gap in knowledge.
+        </p>
+        <p>&nbsp;</p>
+        <p class="text-lg leading-relaxed">
+          To start with, we will focus on a small number of topics in each
+          tutorial, where topics are chosen by the student to address areas
+          where they are least confident. The structure of the sessions may
+          involve me doing some direct teaching to revise or review a topic, but
+          most of the time is spent looking at a range of questions (some
+          exam-style) where the student attempts to answer it and I help them
+          (1) get the right answer and (2) write it in the style expected by
+          exam markschemes.
+        </p>
+        <p>&nbsp;</p>
+        <p class="text-lg leading-relaxed">
+          Closer to exams, sessions focus on past exam papers. Typically,
+          students are given an exam paper to attempt in timed conditions
+          between sessions, then we discuss their attempt in the next session.
+          These sessions are crucial for optimising exam performance, as
+          students build familiarity with the exam format and stucture, and also
+          with what high-quality solutions look like.
+        </p>
+      </section>
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 py-6">
+      © <span id="year"></span> Tom Wicks. All rights reserved.
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="menu.js"></script>
+  </body>
+</html>
